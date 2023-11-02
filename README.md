@@ -2,7 +2,7 @@
 A website for tracking attendance in educational institutions
 
 
-צפה בתצוגת התוכנה:
+Watch the software display:
 https://drive.google.com/file/d/1wQrSZ29aT9_C5uZ1KOSu7sfTOjV26vwr/view?usp=drive_link
 
 
