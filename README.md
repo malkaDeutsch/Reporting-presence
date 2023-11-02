@@ -1,6 +1,6 @@
 # Reporting-presence
 A website for tracking attendance in educational institutions
-[![Click to view](![VID](https://github.com/malkaDeutsch/Reporting-presence/assets/101219031/2ab85dbe-2645-42ce-ac9b-c9782cc1918f)
+[!(![VID](https://github.com/malkaDeutsch/Reporting-presence/assets/101219031/2ab85dbe-2645-42ce-ac9b-c9782cc1918f)
 )](https://drive.google.com/file/d/1wQrSZ29aT9_C5uZ1KOSu7sfTOjV26vwr/view?usp=drive_link)
 
 
