@@ -1,0 +1,19 @@
+
+app-header{
+background-color: white;
+}
+
+
+
+
+/* body {
+
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+
+  } */
+  .childImg{
+    background-image: url("src/assets/toHome/ילדים אוטובוס.jpg") ;
+    background-size: cover;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

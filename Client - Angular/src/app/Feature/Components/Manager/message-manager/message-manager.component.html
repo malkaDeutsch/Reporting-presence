@@ -1,0 +1,51 @@
+<app-header-manager></app-header-manager>
+
+
+<button pButton pRipple type="button" label="שליחת הודעה לכלל ההורים" class="p-button-text"icon="pi pi-comments" ></button>
+<button pButton pRipple type="button" label="שליחת הודעה פרטית" class="p-button-text"icon="pi pi-comment"></button>
+<p-button label="שלח" icon="pi pi-send" [loading]="loading[0]" (onClick)="load(0)"></p-button>
+<p-card header={{topic}} subheader={{userName}} [style]="{width: '770px'}" styleClass="p-card-shadow" id="cardRespon">   
+    <ng-template pTemplate="header">
+    </ng-template>
+    <p>{{text2}}</p>
+    <angular-editor [placeholder]="'Enter text here...'" [(ngModel)]="htmlContent"></angular-editor>
+
+    <ng-template pTemplate="footer">
+                        <div class="allIcons">
+                    <i   class="pi pi-trash" style="font-size: 1rem ;color: rgb(49, 49, 56);" pTooltip="מחיקה" tooltipPosition="bottom" id="icons"></i>
+                    <i   class="pi pi-star-fill" style="font-size: 1rem ;color: rgb(49, 49, 56);" pTooltip="לא מסומן בכוכב" tooltipPosition="bottom" id="icons" ></i>
+              </div>
+<div class="allBtn">
+            <p-button label="תשובה" icon="pi pi-replay" styleClass="p-button-sm" id="replay"></p-button>
+            <p-button label="העברה" icon="pi pi-refresh" styleClass="p-button-sm" id="replay"></p-button>
+</div>
+    </ng-template>
+</p-card>
+<div class="card" style="width: 50%;" id="card">
+    <div class="card">
+        <p-virtualScroller [value]="messageArr" scrollHeight="500px" [itemSize]="100" >
+            <ng-template pTemplate="header">
+                <div class="flex align-items-center justify-content-center gap-3 flex-wrap">
+<p class="titel">{{sortBy}} </p>  
+<button pButton pRipple type="button" label="הודעות מהורים"class="p-button-text"icon="pi pi-users" (click)="fromParents()"></button>
+<button pButton pRipple type="button" label="הודעות ממורים"class="p-button-text"icon="pi pi-desktop" (click)="fromTeachers()"></button>
+<p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="מיין לפי"   [style]="{'min-width':'10em'}" ></p-dropdown>
+                </div>
+            </ng-template>
+            <ng-template let-messageArr pTemplate="item" >
+                <div class="product-item"  id="item" (click)="chooseMessage(messageArr)">
+                    
+                    <div class="image-container" id="prof">
+                        <button pButton pRipple type="button" label='sc' class="p-button-rounded"></button>
+                    </div>
+                    <button pButton pRipple type="button" icon="pi pi-trash" tooltipPosition="bottom" pTooltip="מחיקה" class="p-button-rounded p-button-text"id="trash" (click)="deleteMessage(messageArr)"></button>
+                    <button pButton pRipple type="button" icon="pi pi-envelope"  tooltipPosition="bottom" pTooltip="העברה למצב עוד לא קראתי" id="envelope" class="p-button-rounded p-button-text"></button>
+                    <div class="product-list-action"  id="span" >
+                        <span id="name" [class]="'product-badge status-' + messageArr.userName.toLowerCase()">{{messageArr.userName}}</span><br>
+                        <span id="topic" [class]="'product-badge status-' + messageArr.userName.toLowerCase()">{{messageArr.topic}}</span>
+
+                    </div>
+                </div>
+            </ng-template>
+        </p-virtualScroller>
+    </div>

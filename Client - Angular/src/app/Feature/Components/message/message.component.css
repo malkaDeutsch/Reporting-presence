@@ -1,0 +1,129 @@
+#icons{
+    margin-top: 5px;
+    margin-right: 10px;
+    float: right;
+}
+.allIcons{
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+}
+#message{
+    list-style: none;
+    font-display: inherit;
+    text-align: center;   
+    float: right;
+    margin-left: 10px;
+}
+#replay{
+    margin-right: 20px;
+}
+.allBtn{
+    margin-top: 5px;
+    float: left;  
+}
+.ul{
+    list-style: none;
+    
+}
+#card{
+    float: left;
+    display: block;
+}
+#prof{
+    /* margin-top:10px ; */
+    float: right;
+    margin-right: 30px;
+}
+#span{
+ 
+    direction:rtl;
+}
+#topic{
+    /* margin-top: 10px; */
+    margin-right: 40px; 
+    font-weight: bold;
+}
+#name{
+    /* margin-top:10px;  */
+    margin-right: 40px; 
+    margin-bottom: 20px;
+}
+#item{
+    background-color: rgb(231, 239, 239);
+    box-shadow: 34px;
+    padding: 20px;
+}
+#envelope{
+    margin-left: 25px;
+    position: fixed;
+}
+#trash{
+    margin-right: 17px;
+    position: fixed;
+}
+.titel{
+    float: right;
+    margin-top: 10px;
+}
+#cardRespon{
+float: right;
+margin-top: 42px;
+text-align: right;
+}
+#item:hover {
+    background-color: rgb(221, 230, 230);
+    cursor: pointer;
+    }
+    #icons:hover{
+        cursor: pointer;
+        opacity: 80%;
+    }
+    :host ::ng-deep .p-dropdown {
+        width: 14rem;
+    }
+    
+    .country-item-value {
+        /* img.flag { */
+            width: 17px;
+        }
+    /* } */
+    
+    p-skeleton {
+        width: 100%;
+    }
+
+#sendBtn{
+    float: left;
+    cursor: wait;
+
+}
+#close{
+    float: left;
+    margin-top:-80px;
+    cursor: auto;
+}
+#close:hover{
+    opacity: 80%;
+    cursor: pointer;
+
+}
+.pic{
+    position: fixed;
+    z-index: -1;
+    opacity: 40%;
+width: 800px;
+}
+.span{
+    direction: rtl;
+    font-weight: bolder;
+    float: right;
+}
+#picProfil{
+    height: 20%;
+    width: 20%;
+    float: left;
+}
+#s{
+    width: 200%;
+}

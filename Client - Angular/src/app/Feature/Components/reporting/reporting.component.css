@@ -1,0 +1,41 @@
+
+.approve{
+    color: green;
+    background-color: green;
+}
+.notAppprove{
+    color: rgb(34, 34, 225);
+    background-color: rgb(34, 34, 225);
+}
+.btnPic{
+display:block;
+border-style: outset;
+border-radius: 10px;
+box-shadow: 2px 2px 2px;
+/* margin-bottom: 10px; */
+}
+.menu {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction:row ;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    margin-right: auto;
+  margin-left: auto; 
+
+}
+
+.menu li {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.menu li {
+    text-decoration: none;
+   
+}
+
+.menu li:hover {
+opacity: 70%;
+}

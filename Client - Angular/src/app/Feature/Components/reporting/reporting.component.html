@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+
+<ul class="menu" >
+  <button *ngFor="let child of childList"  (click)="Update(child.childId)" [ngClass]="{'approve':attandance.get(child.childId)==true,'notAppprove':attandance.get(child.childId)==false} " class="btnPic" 
+  pTooltip="? {{child.firstName }} {{child.lastName }} נוכחת" tooltipPosition="bottom"  > 
+<li>
+    <i  class="pi pi-check" style="font-size: 6rem ;color:green;position: absolute; ;   " *ngIf="attandance.get(child.childId)"></i>
+    <p-image src={{child.image}} alt="Image" width="250" height="180" class="picChild"></p-image> 
+</li>
+</button> 
+</ul>
+<p-button styleClass="p-button-sm" label="אישור נוכחות " icon="pi pi-check" iconPos="right" (onClick)="updateAttandance()" ></p-button>
+<!-- {{form}} -->
+
+
+
+
+
+
+
+

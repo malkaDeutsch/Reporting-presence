@@ -1,0 +1,24 @@
+.imgHome{
+    background-image: url("src/assets/toHome/ילדים אוטובוס.jpg") ;
+    background-size: cover;
+    opacity: 30%;
+    height: 600px;
+    z-index: 1;
+}
+
+.picHome{
+   opacity: 30%;
+
+
+width: 100%;
+
+margin: 0 auto;
+display: grid;
+place-items: center;
+grid-template-areas: "inner-div";
+}
+#btn{
+    margin-top: 30px; 
+    margin-left: 730px;
+    z-index: 2;
+}

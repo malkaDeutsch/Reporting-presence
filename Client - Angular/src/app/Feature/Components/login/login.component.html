@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<!-- שם משתמש -->
+<div class="field col-12 md:col-4" id="btnInput" style="width: 20%;">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+        </span>
+        <span class="p-float-label">
+            <input type="text" id="inputgroup" pInputText [(ngModel)]="userName"pTooltip="הכנס שם משתמש">    
+            <label for="inputgroup">{{messageUse}}</label>
+        </span>
+    </div>
+</div>
+<!-- סיסמה -->
+<div class="field col-12 md:col-4" id="btnInput"style="width: 20%;">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            <i class="pi pi-spinner"></i>
+        </span>
+        <span class="p-float-label">
+            <input type="password" id="inputgroup" pInputText [(ngModel)]="password"  pTooltip="הכנס סיסמא"> 
+            <label for="inputgroup">{{messagePas}}</label>
+        </span>
+    </div>
+</div>
+<div class="ozerBtn">
+<p-button  styleClass="p-button-sm" label="אישור" icon="pi pi-check" iconPos="right" (onClick)="checkAndGoToChooseKG()"></p-button>
+<p-button label="שכחתי סיסמא" styleClass="p-button-link"  (onClick)="forgetPas()"></p-button>
+</div>

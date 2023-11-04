@@ -1,0 +1,50 @@
+<app-edit></app-edit>
+
+
+<!-- כתובת  -->
+<div >
+<div class="field col-12 md:col-4" id="btnInput">
+<div class="p-inputgroup" style="width: 20%;">
+    <span class="p-float-label">
+        <input type="text" id="inputgroup" pInputText [(ngModel)]="address">    
+        <label for="inputgroup"> כתובת</label>
+    </span>
+</div>
+</div>
+<!-- טלפון  -->
+<div class="field col-12 md:col-4" id="btnInput">
+    <div class="p-inputgroup" style="width: 20%;">
+
+        <span class="p-float-label">
+            <input type="text" id="inputgroup" pInputText [(ngModel)]="phone" pTooltip="שם משפחה">    
+            <label for="inputgroup">טלפון</label>
+        </span>
+    </div>
+    </div>
+    <!--  אימייל -->
+    <div class="field col-12 md:col-4" id="btnInput">
+        <div class="p-inputgroup" style="width: 20%;">
+ 
+            <span class="p-float-label">
+                <input type="text" id="inputgroup" pInputText [(ngModel)]="email" pTooltip=" כתובת">    
+                <label for="inputgroup"> אימייל</label>
+            </span>
+        </div>
+        </div>
+        <div class="field col-12 md:col-4" id="btnInput">
+            <div class="p-inputgroup"  style="width: 20%;">
+                <span class="p-float-label">
+                    <input type="password" id="inputgroup" pInputText [(ngModel)]="password"  pTooltip="הכנס סיסמא"> 
+                    <label for="inputgroup">סיסמה</label>
+                </span>
+            </div>
+        </div>
+        <div class="ozerBtn">
+            <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value"></p-selectButton>
+    </div>
+    <p>להוסיף בחירת שכבה בחירת רשת גנים ובחירת עיר</p>
+            <div class="ozerBtn">
+            <p-button  styleClass="p-button-sm" label="אישור" icon="pi pi-check" iconPos="right" ></p-button>
+            </div>
+        </div>
+

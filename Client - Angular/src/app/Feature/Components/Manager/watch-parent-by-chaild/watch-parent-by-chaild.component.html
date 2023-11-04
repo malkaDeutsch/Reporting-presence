@@ -1,0 +1,55 @@
+<app-watching></app-watching>
+
+<table ><p class="p">פרטי הורים</p>
+    <tr>
+      <th>קוד משתמש</th>
+      <th>שם האב </th>
+      <th>שם האם </th>
+      <th>משפחה</th>
+      <th>נייד אב</th>
+      <th>נייד אם</th>
+      <th>טלפון בית</th>
+      <th>אימייל אב</th>
+      <th>אימייל אם</th>
+      <th>סיסמה</th>
+      <th>באחריות מי?</th>
+    </tr>
+    <tr *ngFor="let p of parentList">
+        <td>{{p.userId}}</td>
+        <td>{{p.fatherName}}</td>
+        <td>{{p.motheName}}</td>
+        <td>{{p.lastName}}</td>
+        <td>{{p.phoneFather}}</td>
+        <td>{{p.phoneMother}}</td>
+        <td>{{p.phoneHome}}</td>
+        <td>{{p.emailFather}}</td>
+        <td>{{p.emailMothr}}</td>
+        <td>{{p.password}}</td>
+        <td>{{p.responsibiltyOfFather}}</td>
+    </tr>
+</table>
+<br><br>
+<table ><p class="p">פרטי גן</p>
+    <tr>
+      <th>קוד גן</th>
+      <th>כתובת </th>
+      <th>טלפון</th>
+      <th>משפחה</th>
+      <th>אימייל</th>
+      <th>שכבה</th>
+      <th>סוג</th>   
+      <th>סיסמה</th>
+      <th>רשת</th>
+    </tr>
+
+    <tr >
+        <td>{{KG.kindergardenId}}</td>
+        <td>{{KG.address}}</td>
+        <td>{{KG.phone}}</td>
+        <td>{{KG.email}}</td>
+        <td>{{KG.layerId}}</td>
+        <td>{{KG.kind}}</td>
+        <td>{{KG.password}}</td>
+        <td>{{KG.corporationtId}}</td>
+    </tr>
+</table>

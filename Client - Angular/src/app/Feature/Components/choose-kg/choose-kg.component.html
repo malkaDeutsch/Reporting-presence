@@ -1,0 +1,6 @@
+<app-header></app-header>
+<p  style="text-align:center">בחר גן</p>
+<p-dropdown [options]="KG_List" [(ngModel)]="selected_KG" placeholder="בחר גן" optionLabel="name" [showClear]="true" class="dropdown" ></p-dropdown>
+<div class="ozerBtn">
+    <p-button  styleClass="p-button-sm" label="אישור" icon="pi pi-check" iconPos="right" (onClick)="GoToReporting()"></p-button>
+    </div>

@@ -1,0 +1,43 @@
+<app-watching></app-watching>
+<mat-form-field appearance="fill">
+  <mat-label>בחירת גן</mat-label>
+  <mat-select [(ngModel)]="selectedValue" name="food">
+    <mat-option *ngFor="let kg of KG_List" [value]="kg.address">
+      {{kg.address}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>בחירת עיר</mat-label>
+  <mat-select [(ngModel)]="selectedValue" name="food">
+    <mat-option *ngFor="let c of city_List" [value]="c.cityName">
+      {{c.cityName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<button pButton pRipple type="button" label="חיפוש" class="p-button-outlined p-button-rounded p-button-info"></button>
+
+<table >
+    <tr>
+      <th>קוד ילד</th>
+      <th>שם </th>
+      <th>משפחה </th>
+      <th>כתובת</th>
+      <th>גיל</th>
+      <th>תמונה</th>
+      <th>הורה אחראי</th>
+      <th>כתובת גן</th>
+    </tr>
+    <tr *ngFor="let s of childList" (click)="Viewdetails(s.parentId,s.kindergardenId)">
+        <td>{{s.childId}}</td>
+        <td>{{s.firstName}}</td>
+        <td>{{s.lastName}}</td>
+        <td>{{s.address}}</td>
+        <td>{{s.age}}</td>
+        <td> <img mat-card-image src="{{s.image}}" alt="jjj"  class="pic"></td>
+        <td>{{s.parentName}}</td>
+        <td>{{s.kindergardenName}}</td>
+    </tr>
+</table>

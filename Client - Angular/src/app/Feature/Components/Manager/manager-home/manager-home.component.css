@@ -1,0 +1,11 @@
+#allBtn{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+#Btn{
+    margin-left: 50px; 
+}
+#Btn:hover{
+  opacity: 60%;
+}

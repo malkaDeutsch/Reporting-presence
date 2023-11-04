@@ -1,0 +1,55 @@
+<app-edit></app-edit>
+
+
+<!-- שם פרטי -->
+<div >
+    <p-button label="הורים שטרם רשומים*" styleClass="p-button-link"  id="loginParent" (click)="updateParents()"></p-button>
+
+<div class="field col-12 md:col-4" id="btnInput">
+<div class="p-inputgroup" style="width: 20%;">
+    <span class="p-float-label">
+        <input type="text" id="inputgroup" pInputText [(ngModel)]="firstName" pTooltip="שם פרטי">    
+        <label for="inputgroup">שם פרטי</label>
+    </span>
+</div>
+</div>
+<!-- שם משפחה -->
+<div class="field col-12 md:col-4" id="btnInput">
+    <div class="p-inputgroup" style="width: 20%;">
+
+        <span class="p-float-label">
+            <input type="text" id="inputgroup" pInputText [(ngModel)]="lastName" pTooltip="שם משפחה">    
+            <label for="inputgroup">שם משפחה</label>
+        </span>
+    </div>
+    </div>
+    <!--  כתובת -->
+    <div class="field col-12 md:col-4" id="btnInput">
+        <div class="p-inputgroup" style="width: 20%;">
+ 
+            <span class="p-float-label">
+                <input type="text" id="inputgroup" pInputText [(ngModel)]="address" pTooltip=" כתובת">    
+                <label for="inputgroup"> כתובת</label>
+            </span>
+        </div>
+        </div>
+        <!--  גיל -->
+        <div class="field col-12 md:col-4" id="btnInput">
+            <div class="p-inputgroup" style="width: 20%;">
+
+                <span class="p-float-label">
+                    <input type="text" id="inputgroup" pInputText [(ngModel)]="age" pTooltip=" גיל">    
+                    <label for="inputgroup"> גיל</label>
+                </span>
+            </div>
+            </div>
+          
+            <div id="btnUrl">
+            <p-button label="בחר הורים" styleClass="p-button-link" ></p-button>
+            <p-button label="בחר גן" styleClass="p-button-link"  ></p-button>
+        </div>
+
+            <div class="ozerBtn">
+            <p-button  styleClass="p-button-sm" label="אישור" icon="pi pi-check" iconPos="right" (onClick)="Confirm()" ></p-button>
+            </div>
+        </div>

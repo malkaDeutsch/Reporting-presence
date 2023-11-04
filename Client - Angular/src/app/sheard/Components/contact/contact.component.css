@@ -1,0 +1,61 @@
+#request{
+    margin-top: 30px; 
+    margin-left: 600px;
+}
+#btnInput{
+    margin-top: 30px; 
+    margin-left: 665px;
+
+}
+
+.melel{
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #060606;
+    direction: rtl;
+}
+
+#contact h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #2e54b6;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    color: #27275A;
+    font-family: 'Anek+Odia', sans-serif;
+    font-size: 20px;
+    border-color: #27275A;
+
+}
+
+#form label{
+    height: 28px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+#form button{
+    background-color: #F8C3B2;
+    border: 0px;
+    font-size: 20px;
+    margin-left: 3px;
+    border-radius: 4px;
+    padding: 5px 12px;
+}
+
+#form button:hover{
+    background-color: #c0b1ae;
+}
+#btn{
+    margin-top: 50px; 
+    margin-left: 740px;
+}

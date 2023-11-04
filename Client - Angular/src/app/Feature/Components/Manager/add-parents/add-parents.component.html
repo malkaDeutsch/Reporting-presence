@@ -1,0 +1,105 @@
+
+<app-edit></app-edit>
+
+
+<!-- שם אב -->
+<div  >
+<div class="field col-12 md:col-4" id="btnInput">
+<div class="p-inputgroup" style="width: 20%;">
+    <span class="p-float-label">
+        <input type="text" id="inputgroup" pInputText [(ngModel)]="motherName" pTooltip="שם האם">    
+        <label for="inputgroup">שם האם</label>
+    </span>
+</div>
+</div>
+<!-- שם אם -->
+<div class="field col-12 md:col-4" id="btnInput">
+    <div class="p-inputgroup" style="width: 20%;">
+
+        <span class="p-float-label">
+            <input type="text" id="inputgroup" pInputText [(ngModel)]="fatherName" pTooltip="שם ההאב">    
+            <label for="inputgroup">שם האב </label>
+        </span>
+    </div>
+    </div>
+    <!--  שם משפחה -->
+    <div class="field col-12 md:col-4" id="btnInput">
+        <div class="p-inputgroup" style="width: 20%;">
+ 
+            <span class="p-float-label">
+                <input type="text" id="inputgroup" pInputText [(ngModel)]="lastName" pTooltip="שם משפחה">    
+                <label for="inputgroup"> שם משפחה</label>
+            </span>
+        </div>
+        </div>
+        <!--  נייד אם -->
+        <div class="field col-12 md:col-4" id="btnInput">
+            <div class="p-inputgroup" style="width: 20%;">
+
+                <span class="p-float-label">
+                    <input type="text" id="inputgroup" pInputText [(ngModel)]="phoneMother" pTooltip="נייד אם">    
+                    <label for="inputgroup"> נייד אם</label>
+                </span>
+            </div>
+            </div>
+                    <!-- נייד אב -->
+
+            <div class="field col-12 md:col-4" id="btnInput">
+                <div class="p-inputgroup" style="width: 20%;">
+    
+                    <span class="p-float-label">
+                        <input type="text" id="inputgroup" pInputText [(ngModel)]="phonefather" pTooltip="נייד אב">    
+                        <label for="inputgroup"> נייד אב</label>
+                    </span>
+                </div>
+                </div>
+                        <!--  טלפון ביתי  -->
+                <div class="field col-12 md:col-4" id="btnInput">
+                    <div class="p-inputgroup" style="width: 20%;">
+        
+                        <span class="p-float-label">
+                            <input type="text" id="inputgroup" pInputText [(ngModel)]="phoneHome" pTooltip=" טלפון בית">    
+                            <label for="inputgroup"> טלפון בית</label>
+                        </span>
+                    </div>
+                    </div>
+                            <!--  אימייל אם -->
+                    <div class="field col-12 md:col-4" id="btnInput">
+                        <div class="p-inputgroup" style="width: 20%;">
+            
+                            <span class="p-float-label">
+                                <input type="text" id="inputgroup" pInputText [(ngModel)]="emailMother" >    
+                                <label for="inputgroup"> אימייל אם</label>
+                            </span>
+                        </div>
+                        </div>       
+                 <!--  אימייל אב -->
+                         <div class="field col-12 md:col-4" id="btnInput">
+                            <div class="p-inputgroup" style="width: 20%;">
+                
+                                <span class="p-float-label">
+                                    <input type="text" id="inputgroup" pInputText [(ngModel)]="emailFather" pTooltip="נייד אם">    
+                                    <label for="inputgroup"> אימייל אב</label>
+                                </span>
+                            </div>
+                            </div>
+            <!-- סיסמה -->
+            <div class="field col-12 md:col-4" id="btnInput">
+                <div class="p-inputgroup"  style="width: 20%;">
+               
+                    <span class="p-float-label">
+                        <input type="password" id="inputgroup" pInputText [(ngModel)]="password"  pTooltip="הכנס סיסמא"> 
+                        <label for="inputgroup">סיסמה</label>
+                    </span>
+                </div>
+            </div>
+ <!--  ?באחריות האם -->
+
+            <div class="ozerBtn">
+                <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value"></p-selectButton>
+            <!-- <p-triStateCheckbox [(ngModel)]="value" label="באחריות האם " ></p-triStateCheckbox> -->
+        </div>
+            <div class="ozerBtn">
+            <p-button  styleClass="p-button-sm" label="אישור" icon="pi pi-check" iconPos="right" (onClick)="returnToChaild()" ></p-button>
+            </div>
+        </div>
